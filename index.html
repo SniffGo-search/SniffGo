@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SniffGo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg" href="icon.svg" />
+</head>
+<body>
+  <div class="side">
+    <a href="https://sniffgonotes.w3spaces.com" style="color: #a6a6a6; text-decoration: none; position: absolute; left: 5px; top: 5px;"><b>SniffGo Notes</b></a>
+  </div>
+  <main class="center">
+    <header class="brand">
+      <div class="logo" aria-hidden="true">
+        <img src="logo.png" class="small" />
+      </div>
+    </header>
+
+    <form id="searchForm" class="search-form" onsubmit="return false;">
+      <input id="q" class="search-input" type="search" placeholder="Search on SniffGo" aria-label="Search" />
+      <div class="buttons">
+        <button id="searchBtn" class="btn" type="button">Search</button>
+        <button id="luckyBtn" class="btn outline" type="button">I'm Feeling Playful</button>
+      </div>
+    </form>
+
+    <section id="resultsMeta" class="results-meta hidden" aria-live="polite">
+      <div id="resultCount"></div>
+      <div id="pager"></div>
+    </section>
+
+    <section id="results" class="results"></section>
+
+    <footer class="footer">
+      <small>&copy; 2025 SniffGo</small>
+    </footer>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
